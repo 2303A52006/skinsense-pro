@@ -1,0 +1,17 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Private user data: never upload photos or journals
+data/*.db
+data/uploads/
+data/reports/
+data/sessions/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Keep (needed by the app): models/skinsense_model.pth and data/eval_results.jsonmodels/skinsense_model_v1.pth
