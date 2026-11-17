@@ -9,6 +9,12 @@
 
 ---
 
+**Quick facts:** 7 lesion classes · ResNet-18 · HAM10000 · 74.2% accuracy · 83.5% melanoma recall · Grad-CAM explanations · private per-visitor sessions
+
+**Contents:** [What it does](#what-it-does) · [Features](#features) · [Model](#model) · [Limitations](#limitations) · [Privacy](#privacy) · [Run it locally](#run-it-locally)
+
+---
+
 ## What it does
 
 Upload a photo of a skin spot. A ResNet-18 model ranks **7 types of pigmented skin lesions** by probability, shows how confident it is, and highlights the image areas that influenced the result (Grad-CAM). If the model is not confident enough, the app says **Uncertain** instead of guessing and advises seeing a dermatologist.
@@ -83,16 +89,6 @@ Recall per class:
 ## Privacy
 
 When deployed with `SKINSENSE_PUBLIC=1`, every visitor gets a private session folder. Photos and journals are not shared between visitors and are deleted automatically after a few hours of inactivity. When run locally, data is stored in the `data/` folder on your own computer.
-
-## Screenshots
-
-| Welcome | New analysis |
-|---|---|
-| ![Welcome](assets/welcome.png) | ![New analysis](assets/new-analysis.png) |
-
-| Model evaluation | Lesion timeline |
-|---|---|
-| ![Model evaluation](assets/model-evaluation.png) | ![Lesion timeline](assets/timeline.png) |
 
 ## Run it locally
 
